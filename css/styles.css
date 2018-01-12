@@ -1,0 +1,25 @@
+body {
+    font-family: 'Inconsolata', monospace;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+}
+
+.header {
+    background-color: black;
+    color: white;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+}
+
+.first-section {
+    background-color: #f3f3f3;
+}
+
+.#first-section-header {
+    font-size: 10px;
+}
