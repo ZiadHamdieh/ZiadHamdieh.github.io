@@ -18,8 +18,9 @@ body {
 
 .first-section {
     background-color: #f3f3f3;
+    padding-top: 2px;
 }
 
-.#first-section-header {
+.first-section-header {
     font-size: 10px;
 }
