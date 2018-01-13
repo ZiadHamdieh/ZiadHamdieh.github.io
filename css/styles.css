@@ -2,8 +2,29 @@ body {
     font-family: 'Inconsolata', monospace;
 }
 
-.jumbotron {
+.navbar {
     margin-bottom: 0;
+    border-radius: 0;
+    border-color: black;
+    background-color: black;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    font-size: 18px;
+}
+
+.jumbotron {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.jumbotron p {
+    margin-bottom: -5px;
 }
 
 .header {
