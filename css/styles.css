@@ -33,12 +33,19 @@ body {
     color: white;
 }
 
-.btn {
+.btn:hover {
     background-color: black;
+}
+
+.btn {
+    background: none;
     color: white;
     border-radius: 0;
     padding: 5px 20px;
+    letter-spacing: 2px;
+    transition: 0.25s;
 }
+
 
 .first-section {
     background-color: #f3f3f3;
