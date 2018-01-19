@@ -24,9 +24,15 @@ body {
     margin-bottom: 0;
 }
 
+.jumbotron .lead {
+    font-size: 23px;
+}
+
 .jumbotron p {
     margin-bottom: -5px;
+    font-size: 18px;
 }
+
 
 .header {
     background-color: black;
@@ -52,6 +58,7 @@ body {
     padding-top: 2px;
 }
 
-.first-section-header {
-    font-size: 10px;
+h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
 }
