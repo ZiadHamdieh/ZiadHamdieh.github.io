@@ -33,10 +33,10 @@ body {
 
 .jumbotron .lead {
     font-size: 23px;
+    margin-bottom: -5px;
 }
 
 .jumbotron p {
-    margin-bottom: -5px;
     font-size: 18px;
     width: 1450px;
 }
