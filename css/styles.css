@@ -22,6 +22,8 @@ body {
 .jumbotron {
     margin-top: 0;
     margin-bottom: 0;
+    /*height: 400px;
+*/
 }
 
 .jumbotron .lead {
@@ -31,6 +33,7 @@ body {
 .jumbotron p {
     margin-bottom: -5px;
     font-size: 18px;
+    width: 1450px;
 }
 
 
