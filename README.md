@@ -1,7 +1,7 @@
 # ZiadHamdieh.github.io
 My Personal Website where I show the world my interests and personal projects. 
 
-**Technologies:** HTML, CSS, JavaScript, Python.
+**Technologies:** HTML, CSS, JavaScript.
 
 **Libraries/Frameworks:** Bootstrap, JQuery.
 
