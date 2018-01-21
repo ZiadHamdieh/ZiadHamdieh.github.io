@@ -53,8 +53,10 @@ body {
 
 .btn:hover {
     transform: translate3d(4px, 4px, 0);
-    transition: 0.10s;
+    transition: 0.25s;
     box-shadow: none;
+    color: white;
+    background-color: transparent;
 }
 
 .first-section {
