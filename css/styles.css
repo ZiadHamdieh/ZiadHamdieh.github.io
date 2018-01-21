@@ -3,10 +3,6 @@
     color: white;
 }
 
-h2 {
-    font-size: 30px;
-    margin-bottom: 30px;
-}
 
 body {
     font-family: 'Inconsolata', monospace;
@@ -33,13 +29,23 @@ body {
     margin-bottom: 0;
 }
 
-.jumbotron .lead {
-    font-size: 23px;
-    margin-bottom: -5px;
+.jumbotron h1 {
+    font-size: 80px;
+}
+
+
+.jumbotron h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
 }
 
 .jumbotron p {
     font-size: 18px;
+}
+
+.jumbotron .lead {
+    font-size: 23px;
+    margin-bottom: -5px;
 }
 
 .btn {
