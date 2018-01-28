@@ -19,7 +19,7 @@ body {
     color: white;
 }
 
-.navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-nav>li>a {
     color: white;
     font-size: 18px;
 }
@@ -49,20 +49,21 @@ body {
 }
 
 .btn {
-    background: transparent;
     color: white;
     border-radius: 0;
     padding: 5px 20px;
     letter-spacing: 2px;
-    box-shadow: 2px 3px #fff;
+    background: transparent;
+    background-color: transparent;
 }
 
 .btn:hover {
-    transform: translate3d(4px, 4px, 0);
-    transition: 0.25s;
-    box-shadow: none;
     color: white;
+    box-shadow: none;
+    transition: 0.25s;
+    box-shadow: 2px 3px #fff;
     background-color: transparent;
+    transform: translate3d(-4px, -4px, 0);
 }
 
 .first-section {
