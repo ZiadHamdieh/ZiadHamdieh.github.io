@@ -13,7 +13,7 @@ Built on top of [Jekyll](https://jekyllrb.com/), a static site generator and eng
 ### Personal Projects
 
 #### iOS Projects
-- talkative: A WhatsApp<sup>TM</sup> clone
+- talkative: A WhatsApp<sup>TM</sup> clone.
 - MyBitStack: An app that tracks bitcoin/ethereum prices in real-time (19+ currencies).
 - Weathers: Ever wondered what the weather was like outside? Look no further.
 
