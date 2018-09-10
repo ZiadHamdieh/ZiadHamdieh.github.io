@@ -9,9 +9,6 @@ ________________________________________________________________________________
 ### About
 Built on top of [Jekyll](https://jekyllrb.com/), a static site generator and engine behind GitHub pages.
 
-
-### Personal Projects
-
 #### iOS Projects
 - talkative: A WhatsApp<sup>TM</sup> clone.
 - MyBitStack: An app that tracks bitcoin/ethereum prices in real-time (19+ currencies).
@@ -20,8 +17,6 @@ Built on top of [Jekyll](https://jekyllrb.com/), a static site generator and eng
 #### Games (Unity / Unreal Engine 4)
 - Get Out! Solve The Puzzle To Escape The Building (C++, Unreal Engine)
 - StarFighter. 3D side-scrolling platformer (C++, Unreal Engine)
-
-
 
 #### Web Apps
 - Sign Up! Simple web app that uses SQL to store, update, and delete user emails from a database (SQL, NodeJS)
