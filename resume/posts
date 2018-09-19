@@ -1,0 +1,1394 @@
+<!doctype html>
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:website="http://ogp.me/ns/website" lang="en-US" itemscope itemtype="http://schema.org/WebPage"  class="touch-styles">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- This is Squarespace. --><!-- john-sundell -->
+<base href="">
+<meta charset="utf-8" />
+<title>Swift by Sundell</title>
+<link rel="shortcut icon" type="image/x-icon" href="https://static1.squarespace.com/static/590b40b75016e10ca7fbff78/t/590b78a9f5e23194d9b4b80f/favicon.ico"/>
+<link rel="canonical" href="https://www.swiftbysundell.com/"/>
+<meta property="og:site_name" content="Swift by Sundell"/>
+<meta property="og:title" content="All posts"/>
+<meta property="og:url" content="https://www.swiftbysundell.com/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:description" content="A weekly blog about Swift development, written by John Sundell."/>
+<meta property="og:image" content="http://static1.squarespace.com/static/590b40b75016e10ca7fbff78/t/5ac27faa8a922dfd65311417/1522696111579/SwiftBySundellLogo.jpg?format=1000w"/>
+<meta property="og:image:width" content="1000"/>
+<meta property="og:image:height" content="1000"/>
+<meta itemprop="name" content="All posts"/>
+<meta itemprop="url" content="https://www.swiftbysundell.com/"/>
+<meta itemprop="description" content="A weekly blog about Swift development, written by John Sundell."/>
+<meta itemprop="thumbnailUrl" content="http://static1.squarespace.com/static/590b40b75016e10ca7fbff78/t/5ac27faa8a922dfd65311417/1522696111579/SwiftBySundellLogo.jpg?format=1000w"/>
+<link rel="image_src" href="http://static1.squarespace.com/static/590b40b75016e10ca7fbff78/t/5ac27faa8a922dfd65311417/1522696111579/SwiftBySundellLogo.jpg?format=1000w" />
+<meta itemprop="image" content="http://static1.squarespace.com/static/590b40b75016e10ca7fbff78/t/5ac27faa8a922dfd65311417/1522696111579/SwiftBySundellLogo.jpg?format=1000w"/>
+<meta name="twitter:title" content="All posts"/>
+<meta name="twitter:image" content="http://static1.squarespace.com/static/590b40b75016e10ca7fbff78/t/5ac27faa8a922dfd65311417/1522696111579/SwiftBySundellLogo.jpg?format=1000w"/>
+<meta name="twitter:url" content="https://www.swiftbysundell.com/"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:description" content="A weekly blog about Swift development, written by John Sundell."/>
+<meta name="description" content="A weekly blog about Swift development, written by John Sundell." />
+<script type="text/javascript" src="//use.typekit.net/ik/3eQRpQFKFWQoGqoJL__xLoF5g3FtAI5PIEE-6QBtqBIfeljgfFHN4UJLFRbh52jhWD9oweJXweJaFQMUFc9UweFyFhZKZcja5g7bMPG0-cNGdKuDiAoqZAUCO1FUiABkZWF3jAF8OcFzdPU7dhy0OWFudcs8de30SaBujW48Sagyjh90jhNlOeUzjhBC-eNDifUDih8cie4oSam0ZemCdfoRdhXCiaiaOcTz-etlSam0ZemCdfoDSWmyScmDSeBRZPoRdhXCiaiaO1Fa-AZXj18DiAoqZAUCOcFzdPJHdA80-AN0OWgkdkG4fHIuIMMjgfMfqMeZldYFgb.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:400,700,700i,400i|Open+Sans:700,700i,400i,400|Playfair+Display:400,700,700i,400i|Raleway:400,600,700,700i,600i,300i,300,400i"/>
+<script type="text/javascript">SQUARESPACE_ROLLUPS = {};</script>
+<script>(function(rollups, name) { if (!rollups[name]) { rollups[name] = {}; } rollups[name].js = ["//static.squarespace.com/universal/scripts-compressed/common-c68ee44dc14528309726-min.en-US.js"]; })(SQUARESPACE_ROLLUPS, 'squarespace-common');</script>
+<script crossorigin="anonymous" src="//static.squarespace.com/universal/scripts-compressed/common-c68ee44dc14528309726-min.en-US.js" ></script><script crossorigin="anonymous" src="//static.squarespace.com/universal/scripts-compressed/performance-e3e27a305b695755fbd2-min.en-US.js" defer ></script><script data-name="static-context">Static = window.Static || {}; Static.SQUARESPACE_CONTEXT = {"facebookAppId":"314192535267336","rollups":{"squarespace-announcement-bar":{"css":"//static.squarespace.com/universal/styles-compressed/announcement-bar-d41d8cd98f00b204e9800998ecf8427e-min.css","js":"//static.squarespace.com/universal/scripts-compressed/announcement-bar-caada15340ce67274041-min.en-US.js"},"squarespace-audio-player":{"css":"//static.squarespace.com/universal/styles-compressed/audio-player-a57b8f3aa31918104f57a068648fbc63-min.css","js":"//static.squarespace.com/universal/scripts-compressed/audio-player-53e042dc43a8377fa035-min.en-US.js"},"squarespace-blog-collection-list":{"css":"//static.squarespace.com/universal/styles-compressed/blog-collection-list-d41d8cd98f00b204e9800998ecf8427e-min.css","js":"//static.squarespace.com/universal/scripts-compressed/blog-collection-list-b030b2c9bbf640edb6dd-min.en-US.js"},"squarespace-calendar-block-renderer":{"css":"//static.squarespace.com/universal/styles-compressed/calendar-block-renderer-61a327b8527a1fbf9b1fe569505ed5ae-min.css","js":"//static.squarespace.com/universal/scripts-compressed/calendar-block-renderer-def70f70f8c227d9b2d3-min.en-US.js"},"squarespace-chartjs-helpers":{"css":"//static.squarespace.com/universal/styles-compressed/chartjs-helpers-9935a41d63cf08ca108505d288c1712e-min.css","js":"//static.squarespace.com/universal/scripts-compressed/chartjs-helpers-d00198d88a52fb2c6625-min.en-US.js"},"squarespace-comments":{"css":"//static.squarespace.com/universal/styles-compressed/comments-bfcda0f17dd987db5206c1d15e83fd19-min.css","js":"//static.squarespace.com/universal/scripts-compressed/comments-bceb969b2614befe2509-min.en-US.js"},"squarespace-commerce-cart":{"js":"//static.squarespace.com/universal/scripts-compressed/commerce-cart-514070ff78657b555e18-min.en-US.js"},"squarespace-dialog":{"css":"//static.squarespace.com/universal/styles-compressed/dialog-ee8203bf3e94f3c82f5c92798a4e7954-min.css","js":"//static.squarespace.com/universal/scripts-compressed/dialog-757f517004afe48ea70b-min.en-US.js"},"squarespace-events-collection":{"css":"//static.squarespace.com/universal/styles-compressed/events-collection-61a327b8527a1fbf9b1fe569505ed5ae-min.css","js":"//static.squarespace.com/universal/scripts-compressed/events-collection-ecdbbb51fcb47a212c6d-min.en-US.js"},"squarespace-form-rendering-utils":{"js":"//static.squarespace.com/universal/scripts-compressed/form-rendering-utils-0b60b7cdaf670647f955-min.en-US.js"},"squarespace-forms":{"css":"//static.squarespace.com/universal/styles-compressed/forms-ac7917c174031c937e3df4b3a2005b34-min.css","js":"//static.squarespace.com/universal/scripts-compressed/forms-64041a18d7781c955d0b-min.en-US.js"},"squarespace-gallery-collection-list":{"css":"//static.squarespace.com/universal/styles-compressed/gallery-collection-list-d41d8cd98f00b204e9800998ecf8427e-min.css","js":"//static.squarespace.com/universal/scripts-compressed/gallery-collection-list-f2aabfb0b9e292795abc-min.en-US.js"},"squarespace-image-zoom":{"css":"//static.squarespace.com/universal/styles-compressed/image-zoom-72b0ab7796582588032aa6472e2e2f14-min.css","js":"//static.squarespace.com/universal/scripts-compressed/image-zoom-98a80aa3ce4d0043a50a-min.en-US.js"},"squarespace-pinterest":{"css":"//static.squarespace.com/universal/styles-compressed/pinterest-d41d8cd98f00b204e9800998ecf8427e-min.css","js":"//static.squarespace.com/universal/scripts-compressed/pinterest-5646327aabcb4dc0d52b-min.en-US.js"},"squarespace-popup-overlay":{"css":"//static.squarespace.com/universal/styles-compressed/popup-overlay-7b48efeab9b323dfdb524a256cf61595-min.css","js":"//static.squarespace.com/universal/scripts-compressed/popup-overlay-5b613dc7116c24a3e91c-min.en-US.js"},"squarespace-product-quick-view":{"css":"//static.squarespace.com/universal/styles-compressed/product-quick-view-bc8694b75a40e4bd969b662b80ebafb5-min.css","js":"//static.squarespace.com/universal/scripts-compressed/product-quick-view-e29fb0ecaaa79393891f-min.en-US.js"},"squarespace-products-collection-item-v2":{"css":"//static.squarespace.com/universal/styles-compressed/products-collection-item-v2-72b0ab7796582588032aa6472e2e2f14-min.css","js":"//static.squarespace.com/universal/scripts-compressed/products-collection-item-v2-47b8594bd328632472fc-min.en-US.js"},"squarespace-products-collection-list-v2":{"css":"//static.squarespace.com/universal/styles-compressed/products-collection-list-v2-72b0ab7796582588032aa6472e2e2f14-min.css","js":"//static.squarespace.com/universal/scripts-compressed/products-collection-list-v2-83884f4fdfc4515ca63d-min.en-US.js"},"squarespace-search-page":{"css":"//static.squarespace.com/universal/styles-compressed/search-page-ea3e98edb84abbc5e758884f69149027-min.css","js":"//static.squarespace.com/universal/scripts-compressed/search-page-7d2285fb1eef610e4bce-min.en-US.js"},"squarespace-search-preview":{"js":"//static.squarespace.com/universal/scripts-compressed/search-preview-eb305552e4ef450d7c2c-min.en-US.js"},"squarespace-share-buttons":{"js":"//static.squarespace.com/universal/scripts-compressed/share-buttons-55ab17c09f5274af619f-min.en-US.js"},"squarespace-simple-liking":{"css":"//static.squarespace.com/universal/styles-compressed/simple-liking-310d0b18e112f708f91339b11fd55714-min.css","js":"//static.squarespace.com/universal/scripts-compressed/simple-liking-e835348c33f0d9ed767b-min.en-US.js"},"squarespace-social-buttons":{"css":"//static.squarespace.com/universal/styles-compressed/social-buttons-26106f808f7e9c739a7f862a408ed039-min.css","js":"//static.squarespace.com/universal/scripts-compressed/social-buttons-976cfc6f1a693367e169-min.en-US.js"},"squarespace-tourdates":{"css":"//static.squarespace.com/universal/styles-compressed/tourdates-d41d8cd98f00b204e9800998ecf8427e-min.css","js":"//static.squarespace.com/universal/scripts-compressed/tourdates-2bf9200e8f8d7ae38d6d-min.en-US.js"},"squarespace-website-overlays-manager":{"css":"//static.squarespace.com/universal/styles-compressed/website-overlays-manager-421ba6ba97de46a4a25674cfd6348459-min.css","js":"//static.squarespace.com/universal/scripts-compressed/website-overlays-manager-abff5ae7a383b261d8ec-min.en-US.js"}},"pageType":1,"website":{"id":"590b40b75016e10ca7fbff78","identifier":"john-sundell","websiteType":1,"contentModifiedOn":1535981818348,"cloneable":false,"siteStatus":{},"language":"en-US","timeZone":"Europe/Stockholm","machineTimeZoneOffset":7200000,"timeZoneOffset":7200000,"timeZoneAbbr":"CEST","siteTitle":"Swift by Sundell","siteTagLine":"A weekly blog about Swift development","siteDescription":"<p>A weekly blog and podcast about Swift development,&nbsp;by John Sundell.</p>","socialLogoImageId":"5ac27faa8a922dfd65311417","shareButtonOptions":{"1":true,"2":true,"3":true,"7":true},"socialLogoImageUrl":"//static1.squarespace.com/static/590b40b75016e10ca7fbff78/t/5ac27faa8a922dfd65311417/1535981818348/","authenticUrl":"https://www.swiftbysundell.com","internalUrl":"https://john-sundell.squarespace.com","baseUrl":"https://www.swiftbysundell.com","primaryDomain":"www.swiftbysundell.com","sslSetting":3,"isHstsEnabled":false,"typekitId":"","statsMigrated":false,"imageMetadataProcessingEnabled":false,"screenshotId":"e32b8fb4"},"websiteSettings":{"id":"590b40b75016e10ca7fbff7a","websiteId":"590b40b75016e10ca7fbff78","type":"Personal","subjects":[],"country":"SE","simpleLikingEnabled":true,"mobileInfoBarSettings":{"isContactEmailEnabled":false,"isContactPhoneNumberEnabled":false,"isLocationEnabled":false,"isBusinessHoursEnabled":false},"announcementBarSettings":{"style":1,"text":"<p>Want to hear the story behind fastlane &amp; Felix Krause\u2019s top tips for building dev tools? Listen to the latest episode of the podcast \uD83D\uDC4D</p>","clickthroughUrl":{"url":"https://swiftbysundell.com/podcast/31","newWindow":true}},"commentLikesAllowed":true,"commentAnonAllowed":true,"commentThreaded":true,"commentApprovalRequired":false,"commentAvatarsOn":true,"commentSortType":2,"commentFlagThreshold":0,"commentFlagsAllowed":true,"commentEnableByDefault":false,"commentDisableAfterDaysDefault":0,"disqusShortname":"","commentsEnabled":false,"contactPhoneNumber":"","storeSettings":{"returnPolicy":null,"termsOfService":null,"privacyPolicy":null,"paymentSettings":{},"expressCheckout":false,"continueShoppingLinkUrl":"/","useLightCart":false,"showNoteField":false,"shippingCountryDefaultValue":"US","billToShippingDefaultValue":false,"showShippingPhoneNumber":true,"isShippingPhoneRequired":false,"showBillingPhoneNumber":true,"isBillingPhoneRequired":false,"multipleQuantityAllowedForServices":true,"currenciesSupported":["CHF","HKD","MXN","EUR","DKK","USD","CAD","MYR","NOK","THB","AUD","SGD","ILS","PLN","GBP","CZK","SEK","NZD","PHP","RUB"],"defaultCurrency":"USD","selectedCurrency":"USD","measurementStandard":2,"showCustomCheckoutForm":false,"enableMailingListOptInByDefault":false,"sameAsRetailLocation":false,"isLive":false},"useEscapeKeyToLogin":true,"ssBadgeType":1,"ssBadgePosition":4,"ssBadgeVisibility":1,"ssBadgeDevices":1,"pinterestOverlayOptions":{"mode":"disabled"},"ampEnabled":false},"cookieSettings":{"isCookieBannerEnabled":false,"isRestrictiveCookiePolicyEnabled":false,"isRestrictiveCookiePolicyAbsolute":false,"cookieBannerText":"","cookieBannerTheme":"","cookieBannerVariant":"","cookieBannerPosition":"","cookieBannerCtaVariant":"","cookieBannerCtaText":""},"websiteCloneable":false,"collection":{"title":"All posts","id":"590b4514db29d6088905acb0","fullUrl":"/","type":1},"subscribed":false,"appDomain":"squarespace.com","templateTweakable":true,"tweakJSON":{"aspect-ratio":"Auto","gallery-arrow-style":"Circular","gallery-aspect-ratio":"16:9 Widescreen","gallery-auto-crop":"true","gallery-autoplay":"false","gallery-design":"Slideshow","gallery-info-overlay":"Always Show","gallery-loop":"false","gallery-navigation":"Thumbnails","gallery-show-arrows":"true","gallery-transitions":"Fade","galleryArrowBackground":"rgba(255,255,255,0.7)","galleryArrowColor":"rgba(102,102,102,1)","galleryAutoplaySpeed":"3","galleryCircleColor":"rgba(255,255,255,0.8)","galleryInfoBackground":"rgba(255,255,255,0.7)","galleryThumbnailSize":"100px","gridSize":"350px","gridSpacing":"20px","maxNumberColumns":"3","minColumnWidth":"230","tweak-blog-list-grid-alignment":"Top","tweak-blog-list-grid-narrow-columns":"false","tweak-blog-list-max-width":"Wide","tweak-crop-images":"None","tweak-infinite-scroll":"false","tweak-product-item-image-zoom-factor":"2.5","tweak-product-list-item-hover-behavior":"Fade","tweak-product-list-items-per-row":"3","tweak-show-progress-indicator":"false","tweak-user-account-link-position":"With Nav"},"templateId":"54d3906fe4b04c1c9981b00e","pageFeatures":[1,2,4],"googleMapsStaticApiKey":"AIzaSyBQdch5IcgcQaKNG76sbMQv1MEBEKLeQ-8","impersonatedSession":false,"demoCollections":[{"collectionId":"555b8bd5e4b01c98bb73fe95","deleted":true},{"collectionId":"55551c3ae4b085fe4d315750","deleted":true},{"collectionId":"56aab2673c44d847755998fe","deleted":true}],"isFacebookTab":false,"tzData":{"zones":[[60,"EU","CE%sT",null]],"rules":{"EU":[[1981,"max",null,"Mar","lastSun","1:00u","1:00","S"],[1996,"max",null,"Oct","lastSun","1:00u","0",null]]}},"useNewImageLoader":true};</script><script type="text/javascript"> SquarespaceFonts.loadViaContext(); Squarespace.load(window);</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://www.swiftbysundell.com/posts?format=RSS" />
+<script type="application/ld+json">{"url":"https://www.swiftbysundell.com","name":"Swift by Sundell","description":"<p>A weekly blog and podcast about Swift development,&nbsp;by John Sundell.</p>","@context":"http://schema.org","@type":"WebSite"}</script><!--[if gte IE 9]> <link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/590b40b75016e10ca7fbff78/16/54d3906fe4b04c1c9981b00e/590b40b75016e10ca7fbff7f/4930-05142015/1535924013639/site.css?&filterFeatures=false&part=1"/><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/590b40b75016e10ca7fbff78/16/54d3906fe4b04c1c9981b00e/590b40b75016e10ca7fbff7f/4930-05142015/1535924013639/site.css?&filterFeatures=false&part=2"/><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/590b40b75016e10ca7fbff78/16/54d3906fe4b04c1c9981b00e/590b40b75016e10ca7fbff7f/4930-05142015/1535924013639/site.css?&filterFeatures=false&part=3"/><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/590b40b75016e10ca7fbff78/16/54d3906fe4b04c1c9981b00e/590b40b75016e10ca7fbff7f/4930-05142015/1535924013639/site.css?&filterFeatures=false&part=4"/><![endif]-->
+<!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/590b40b75016e10ca7fbff78/16/54d3906fe4b04c1c9981b00e/590b40b75016e10ca7fbff7f/4930-05142015/1535924013639/site.css?&filterFeatures=false&noMedia=true&part=1"/><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/590b40b75016e10ca7fbff78/16/54d3906fe4b04c1c9981b00e/590b40b75016e10ca7fbff7f/4930-05142015/1535924013639/site.css?&filterFeatures=false&noMedia=true&part=2"/><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/590b40b75016e10ca7fbff78/16/54d3906fe4b04c1c9981b00e/590b40b75016e10ca7fbff7f/4930-05142015/1535924013639/site.css?&filterFeatures=false&noMedia=true&part=3"/><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/590b40b75016e10ca7fbff78/16/54d3906fe4b04c1c9981b00e/590b40b75016e10ca7fbff7f/4930-05142015/1535924013639/site.css?&filterFeatures=false&noMedia=true&part=4"/><![endif]-->
+<!--[if !IE]> --><link rel="stylesheet" type="text/css" href="//static1.squarespace.com/static/sitecss/590b40b75016e10ca7fbff78/16/54d3906fe4b04c1c9981b00e/590b40b75016e10ca7fbff7f/4930-05142015/1535924013639/site.css?&filterFeatures=false"/><!-- <![endif]-->
+<style>
+.main-nav-wrapper {
+    width: 100% !important;
+}
+  
+.sidetray-blocks {
+    display: none !important; 
+}
+  
+.social-ellipsis {
+    display: none !important; 
+}
+  
+.theme-select {
+	padding-top: 40px;
+    text-align: center;
+}
+</style>
+
+<style>
+/*
+SOURCE CODE PRO LICENSE
+
+Copyright 2010, 2012 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name 'Source'. All Rights Reserved. Source is a trademark of Adobe Systems Incorporated in the United States and/or other countries.
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+
+This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL
+
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+
+PREAMBLE The goals of the Open Font License (OFL) are to stimulate worldwide development of collaborative font projects, to support the font creation efforts of academic and linguistic communities, and to provide a free and open framework in which fonts may be shared and improved in partnership with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and redistributed freely as long as they are not sold by themselves. The fonts, including any derivative works, can be bundled, embedded, redistributed and/or sold with any software provided that any reserved names are not used by derivative works. The fonts and derivatives, however, cannot be released under any other type of license. The requirement for fonts to remain under this license does not apply to any document created using the fonts or their derivatives.
+
+DEFINITIONS "Font Software" refers to the set of files released by the Copyright Holder(s) under this license and clearly marked as such. This may include source files, build scripts and documentation.
+
+"Reserved Font Name" refers to any names specified as such after the copyright statement(s).
+
+"Original Version" refers to the collection of Font Software components as distributed by the Copyright Holder(s).
+
+"Modified Version" refers to any derivative made by adding to, deleting, or substituting -- in part or in whole -- any of the components of the Original Version, by changing formats or by porting the Font Software to a new environment.
+
+"Author" refers to any designer, engineer, programmer, technical writer or other person who contributed to the Font Software.
+
+PERMISSION & CONDITIONS Permission is hereby granted, free of charge, to any person obtaining a copy of the Font Software, to use, study, copy, merge, embed, modify, redistribute, and sell modified and unmodified copies of the Font Software, subject to the following conditions:
+
+Neither the Font Software nor any of its individual components, in Original or Modified Versions, may be sold by itself.
+
+Original or Modified Versions of the Font Software may be bundled, redistributed and/or sold with any software, provided that each copy contains the above copyright notice and this license. These can be included either as stand-alone text files, human-readable headers or in the appropriate machine-readable metadata fields within text or binary files as long as those fields can be easily viewed by the user.
+
+No Modified Version of the Font Software may use the Reserved Font Name(s) unless explicit written permission is granted by the corresponding Copyright Holder. This restriction only applies to the primary font name as presented to the users.
+
+The name(s) of the Copyright Holder(s) or the Author(s) of the Font Software shall not be used to promote, endorse or advertise any Modified Version, except to acknowledge the contribution(s) of the Copyright Holder(s) and the Author(s) or with their explicit written permission.
+
+The Font Software, modified or unmodified, in part or in whole, must be distributed entirely under this license, and must not be distributed under any other license. The requirement for fonts to remain under this license does not apply to any document created using the Font Software.
+
+TERMINATION This license becomes null and void if any of the above conditions are not met.
+
+DISCLAIMER THE FONT SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM OTHER DEALINGS IN THE FONT SOFTWARE.
+*/
+
+@font-face {
+    font-family: "Code";
+    src: url(https://static1.squarespace.com/static/590b40b75016e10ca7fbff78/t/5b7e6d5e352f532f090a9bbc/1535012191581/SourceCodePro-Regular.ttf);
+}
+
+pre.splash {
+    margin-bottom: 1.5em;
+    background-color: #1a1a1a;
+    padding: 16px 0;
+    border-radius: 16px;
+}
+
+pre.splash code {
+    font-family: "Code", monospace;
+    display: block;
+    padding: 0 20px;
+    color: #a9bcbc;
+    line-height: 1.4em;
+    font-size: 0.95em;
+    overflow-x: auto;
+    white-space: pre;
+}
+
+pre.splash code .keyword {
+    color: #e73289;
+}
+
+pre.splash code .type {
+    color: #8281ca;
+}
+
+pre.splash code .call {
+    color: #348fe5;
+}
+
+pre.splash code .property {
+    color: #21ab9d;
+}
+
+pre.splash code .number {
+    color: #db6f57;
+}
+
+pre.splash code .string {
+    color: #fa641e;
+}
+
+pre.splash code .comment {
+    color: #6b8a94;
+}
+
+pre.splash code .dotAccess {
+    color: #92b300;
+}
+
+pre.splash code .preprocessing {
+    color: #b68a00;
+}
+</style>
+
+<style>
+/* Light theme */
+  
+body.light-theme #theme-select-light {
+    font-weight: bold;  
+}
+  
+/* Dark theme */
+  
+body.dark-theme,
+body.dark-theme.tweak-header-background-color-on.header-tucked .header-announcement-wrapper,
+body.dark-theme.nav-open .main-nav-wrapper,
+body.dark-theme.show-search .header-search-form,
+body.dark-theme.show-search .header-search-form-input {
+	background-color: #222 !important;
+  	color: #ddd;
+}
+  
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme a,
+body.dark-theme .site-title-text,
+body.dark-theme .blog-item-comments-toggle,
+body.dark-theme .comment-count {
+	color: #ddd !important;  
+}
+  
+body.dark-theme .nav-toggle-label svg,
+body.dark-theme .header-search svg,
+body.dark-theme .nav-toggle-close-label svg {
+	stroke: #ddd;  
+}
+  
+body.dark-theme .blog-item-pagination-link svg {
+	fill: #ddd;  
+}
+  
+body.dark-theme.tweak-underline-body-links .html-block a {
+	border-color: #ddd;  
+}
+
+body.dark-theme .Share-buttons-item,
+body.dark-theme .sqs-template-social-icons .sqs-use--icon {
+	fill: #ddd !important;  
+}
+  
+body.dark-theme .sidetray-wrapper {
+	border-color: #444;
+  	background-color: #222;
+}
+  
+body.dark-theme .main-nav-wrapper {
+	border: none;  
+}
+  
+body.dark-theme .mobile-bar {
+	background-color: #222;  
+}
+
+body.dark-theme #theme-select-dark {
+	font-weight: bold;  
+}
+  
+/* Black theme */
+  
+body.black-theme,
+body.black-theme.tweak-header-background-color-on.header-tucked .header-announcement-wrapper,
+body.black-theme.nav-open .main-nav-wrapper,
+body.black-theme.show-search .header-search-form,
+body.black-theme.show-search .header-search-form-input {
+	background-color: #000 !important;
+  	color: #ddd;
+}
+  
+body.black-theme h1,
+body.black-theme h2,
+body.black-theme a,
+body.black-theme .site-title-text,
+body.black-theme .blog-item-comments-toggle,
+body.black-theme .comment-count {
+	color: #ddd !important;  
+}
+  
+body.black-theme .nav-toggle-label svg,
+body.black-theme .header-search svg,
+body.black-theme .nav-toggle-close-label svg {
+	stroke: #ddd;  
+}
+  
+body.black-theme .blog-item-pagination-link svg {
+	fill: #ddd;  
+}
+  
+body.black-theme.tweak-underline-body-links .html-block a {
+	border-color: #ddd;  
+}
+  
+body.black-theme .Share-buttons-item,
+body.black-theme .sqs-template-social-icons .sqs-use--icon {
+	fill: #ddd !important;  
+}
+  
+body.black-theme .sidetray-wrapper {
+	border-color: #444;
+  	background-color: #000;
+}
+  
+body.black-theme .main-nav-wrapper {
+	border: none;  
+}
+  
+body.black-theme .mobile-bar {
+	background-color: #000;  
+}
+
+body.black-theme #theme-select-black {
+	font-weight: bold;  
+}
+  
+.daily-wwdc-wrapper {
+	text-align: center;
+  	margin-bottom: 40px;
+}
+  
+.daily-wwdc-wrapper a:hover {
+	background-color: #f5f5f5;  
+}
+  
+body.dark-theme .daily-wwdc-wrapper a:hover {
+	background-color: #333;  
+}
+  
+body.black-theme .daily-wwdc-wrapper a:hover {
+	background-color: #111;  
+}
+  
+.daily-wwdc-wrapper a {
+    display: inline-block;
+	border: 1px solid #000;
+    padding: 10px 15px;
+    margin: 0px 15px;
+    border-radius: 15px;
+    color: #f05138;  
+}
+  
+.mobile-style-available .daily-wwdc-wrapper a {
+    margin-bottom: 20px;
+}
+  
+body.dark-theme .daily-wwdc-wrapper a,
+body.black-theme .daily-wwdc-wrapper a {
+    border-color: #ddd;  
+}
+</style>
+
+<script>
+(function() {
+    function applyTheme() {
+        var theme = window.localStorage.getItem("theme");
+    
+        if (theme == null) {
+            theme = "light"; 
+        }
+    
+        document.body.classList.add(theme + "-theme");
+      
+        let selector = document.getElementById("theme-select-" + theme)
+        
+        if (selector != null) {
+            selector.removeAttribute("href");
+          	selector.removeAttribute("onclick");
+        }
+    }
+  
+    document.addEventListener('DOMContentLoaded', applyTheme, false);
+})();
+  
+function selectTheme(theme) {
+  window.localStorage.setItem("theme", theme);
+  location.reload();
+  return false;
+}
+</script>
+
+<script>
+(function() {
+  function addWWDCUpdatesLink() {
+    if (!document.body.id.startsWith("collection")) {
+        return; 
+    }
+    
+    var page = document.getElementById("page");
+    page.innerHTML = '<div class="daily-wwdc-wrapper"><a href="/daily-wwdc"><b>Daily WWDC Updates</b><br/>Catch up on my five daily updates that I did during WWDC.</a></div>' + page.innerHTML;
+  }
+  
+  document.addEventListener('DOMContentLoaded', addWWDCUpdatesLink, false);
+})();
+</script><script>Static.COOKIE_BANNER_CAPABLE = true;</script>
+<!-- End of Squarespace Headers -->
+  <script>
+    (function(){
+      var touchTest = 'ontouchstart' in window || navigator.msMaxTouchPoints;
+      if (!touchTest) {
+        document.documentElement.className = document.documentElement.className.replace(/touch\-styles/g, '');
+      }
+    })();</script>
+  </head>
+  <body id="collection-590b4514db29d6088905acb0" class="tweak-header-background-color-on tweak-main-blocks-full-bleed tweak-underline-body-links tweak-ui-icon-weight-light tweak-navigation-link-spacing-small  tweak-site-branding-borders-none tweak-show-site-tagline tweak-site-branding-layout-inline tweak-show-search-in-header tweak-show-social-in-header tweak-user-account-link-position-with-nav tweak-quote-block-alignment-center tweak-blog-list-grid-alignment-top tweak-blog-list-max-width-wide  tweak-crop-images-none   tweak-show-excerpt-on-blog-list   tweak-blog-text-alignment-left tweak-blog-promoted-meta-categories tweak-blog-date-style-above-title tweak-blog-show-divider  tweak-blog-item-banner-image-width-normal  tweak-show-blog-item-author-profile-hide  tweak-template-social-icon-style-regular    event-show-past-events event-thumbnails event-thumbnail-size-11-square event-date-label event-date-label-time event-list-show-cats event-list-date event-list-time event-list-address event-list-icalgcal-links event-list-like-and-share-buttons event-icalgcal-links event-like-and-share-buttons event-excerpts event-list-cta-button event-item-back-link    gallery-design-slideshow aspect-ratio-auto lightbox-style-dark gallery-navigation-thumbnails gallery-info-overlay-always-show gallery-aspect-ratio-169-widescreen gallery-arrow-style-circular gallery-transitions-fade gallery-show-arrows gallery-auto-crop   tweak-product-list-image-aspect-ratio-11-square tweak-product-list-item-hover-behavior-fade tweak-product-list-meta-position-under tweak-product-list-mobile-meta-position-under tweak-product-list-meta-alignment-under-center tweak-product-list-meta-alignment-overlay-center-center tweak-product-list-show-title tweak-product-list-show-price tweak-product-list-filter-display-left-side tweak-product-list-filter-alignment-left tweak-product-item-nav-show-breadcrumb-and-pagination tweak-product-item-nav-pagination-style-previousnext tweak-product-item-nav-breadcrumb-alignment-left tweak-product-item-nav-pagination-alignment-split tweak-product-item-gallery-position-right tweak-product-item-gallery-design-stacked tweak-product-item-gallery-aspect-ratio-11-square tweak-product-item-gallery-thumbnail-alignment-left tweak-product-item-details-alignment-left tweak-product-item-details-show-title tweak-product-item-details-show-price tweak-product-item-details-show-excerpt tweak-product-item-details-excerpt-position-below-add-to-cart-button tweak-product-item-details-show-share-buttons tweak-product-item-details-show-variants tweak-product-item-details-show-quantity tweak-product-item-details-options-style-rounded tweak-product-item-details-show-add-to-cart-button tweak-product-item-details-add-to-cart-button-style-solid tweak-product-item-details-add-to-cart-button-shape-rounded tweak-product-item-details-add-to-cart-button-padding-small tweak-product-item-image-zoom-enabled tweak-product-item-image-zoom-behavior-click tweak-product-item-lightbox-enabled tweak-product-badge-style-circle tweak-product-badge-position-top-right tweak-product-badge-inset-floating newsletter-style-dark hide-opentable-icons opentable-style-dark small-button-style-outline small-button-shape-pill medium-button-style-outline medium-button-shape-pill large-button-style-outline large-button-shape-pill image-block-poster-text-alignment-center image-block-card-dynamic-font-sizing image-block-card-content-position-center image-block-card-text-alignment-left image-block-overlap-dynamic-font-sizing image-block-overlap-content-position-center image-block-overlap-text-alignment-left image-block-collage-dynamic-font-sizing image-block-collage-content-position-top image-block-collage-text-alignment-left image-block-stack-dynamic-font-sizing image-block-stack-text-alignment-left button-style-outline button-corner-style-pill tweak-product-quick-view-button-style-floating tweak-product-quick-view-button-position-bottom tweak-product-quick-view-lightbox-excerpt-display-truncate tweak-product-quick-view-lightbox-show-arrows tweak-product-quick-view-lightbox-show-close-button tweak-product-quick-view-lightbox-controls-weight-light tweak-share-buttons-style-icon-only tweak-share-buttons-icons-show  tweak-share-buttons-counts-show  tweak-share-buttons-standard-background-color native-currency-code-usd collection-type-blog collection-590b4514db29d6088905acb0 collection-layout-default homepage view-list mobile-style-available" data-controller="SyncHeader, AddScrollingClass, HeaderScroll, BodyMinHeight">
+    <div class="nav-close-overlay">
+
+    </div>
+    <div class="nav-close-toggle-wrapper" id="navCloseToggleWrapper">
+      <a class="nav-toggle-close-label responsive-position--left" id="navCloseToggle" data-controller="NavToggle">
+        <svg class="Icon Icon--close close-icon" viewBox="0 0 18 18">
+          <use xlink:href="/assets/ui-icons.svg#close-icon-line"></use>
+        </svg>
+      </a>
+    </div>
+    <div id="sideTrayWrapper" class="sidetray-wrapper">
+      <div class="main-nav-wrapper responsive-padding--top responsive-padding--bottom" data-controller="NavOverflow">
+        <div class="nav-blocks-wrapper">
+          
+<nav id="mainNavigation" class="main-navigation" role="navigation" data-content-field="navigation">
+  
+
+    
+      
+
+        
+        <div class="nav-link--collection nav-link--active nav-link--homepage" id="id-590b4514db29d6088905acb0">
+          <a href="/">
+            <span>All posts</span>
+          </a>
+        </div>
+        
+
+      
+
+    
+
+  
+
+    
+      
+
+        
+        <div class="nav-link--collection" id="id-59b6ab1b8fd4d267470c91c7">
+          <a href="/categories/">
+            <span>Categories</span>
+          </a>
+        </div>
+        
+
+      
+
+    
+
+  
+
+    
+      
+
+        
+        <div class="nav-link--collection" id="id-59823ecac534a526009cda28">
+          <a href="/podcast/">
+            <span>Podcast</span>
+          </a>
+        </div>
+        
+
+      
+
+    
+
+  
+
+    
+      
+
+        
+        <div class="nav-link--collection" id="id-5b8596fe0ebbe86e1ff0c352">
+          <a href="/newsletter/">
+            <span>Newsletter</span>
+          </a>
+        </div>
+        
+
+      
+
+    
+
+  
+
+    
+      
+
+        
+        <div class="nav-link--collection" id="id-59aacc28914e6b7e9f7c6380">
+          <a href="/subscribe/">
+            <span>Subscribe</span>
+          </a>
+        </div>
+        
+
+      
+
+    
+
+  
+
+    
+      
+
+        
+        <div class="nav-link--collection" id="id-59f0c84190badea3e7ab8509">
+          <a href="/meta/">
+            <span>Meta</span>
+          </a>
+        </div>
+        
+
+      
+
+    
+
+  
+
+    
+      
+
+        
+        <div class="nav-link--collection" id="id-5970cb08c534a5793b9eeae9">
+          <a href="/talks/">
+            <span>Talks</span>
+          </a>
+        </div>
+        
+
+      
+
+    
+
+  
+
+    
+      
+      <div class="nav-link--external">
+        <a href="https://twitter.com/johnsundell" target="_blank">
+          <span>Twitter</span>
+        </a>
+      </div>
+      
+
+    
+
+  
+  
+</nav>
+
+
+          <div class="sqs-layout sqs-grid-1 columns-1" data-layout-label="Nav Blocks" data-type="block-field" data-updated-on="1493920974490" id="navBlocks"><div class="row sqs-row"><div class="col sqs-col-1 span-1"></div></div></div>
+        </div>
+      </div><!--
+      --><div class="sidetray-blocks responsive-padding--top responsive-padding--bottom" data-controller="SidetrayBlocksOverflow">
+        <div class="sidetray-blocks-wrapper">
+          <div class="sqs-layout sqs-grid-1 columns-1 empty" data-layout-label="Sidetray Blocks" data-type="block-field" data-updated-on="1493920544994" id="sideTrayBlocks"><div class="row sqs-row"><div class="col sqs-col-1 span-1"></div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <form class="header-search-form" id="headerSearch" action="/search" method="get">
+      <input class="header-search-form-input" name="q" placeholder="Search" type="text" spellcheck="false" value="" autocomplete="off">
+    </form>
+
+    
+
+    <div id="site" class="site-container clearfix">
+
+      <div class="sqs-announcement-bar-dropzone header-announcement-wrapper responsive-padding--left responsive-padding--right" id="headerAnnouncementWrapper">
+        <header id="header" class="site-header loading" role="banner">
+          <a class="nav-toggle-label flex-item" id="navToggle" data-controller="NavToggle">
+            <svg class="Icon Icon--hamburger nav-toggle-label-icon" viewBox="0 0 26 18">
+              <use xlink:href="/assets/ui-icons.svg#hamburger-icon--even"></use>
+            </svg>
+          </a>
+
+          <div class="logo-wrapper flex-item">
+          
+            
+              <div class="site-title branding" data-content-field="site-title"><a href="/"><span class="site-title-text">Swift by Sundell</span> <span class="site-tagline">A weekly blog about Swift development</span></a></div>
+            
+          
+          </div>
+
+          
+
+          <div class="header-special flex-item">
+            <div class="social-search-wrapper">
+              <div class="social-ellipsis" id="socialEllipsis" data-controller="SocialToggle">
+                <svg class="ellipsis-icon" viewBox="0 0 100 24">
+                  <use xlink:href="/assets/ui-icons.svg#ellipsis-icon"></use>
+                </svg>
+                <svg class="social-close-icon Icon Icon--close" viewBox="0 0 18 18">
+                  <use xlink:href="/assets/ui-icons.svg#close-icon-line"></use>
+                </svg>
+              </div><!--
+               
+             --><a href="/search" rel="search" class="header-search" data-controller="SearchToggle">
+                <svg class="Icon Icon--search search-icon" viewBox="0 0 20 20" shape-rendering="geometricPrecision">
+                  <use xlink:href="/assets/ui-icons.svg#search-icon"></use>
+                </svg>
+                <svg class="Icon Icon--close search-close-icon" viewBox="0 0 18 18">
+                  <use xlink:href="/assets/ui-icons.svg#close-icon-line"></use>
+                </svg>
+               </a>
+              </div><!--
+              --><!--
+              -->
+          </div>
+        </header>
+      </div>
+
+      <main id="page" class="site-page loading responsive-padding--left responsive-padding--right site-page--blog-list" role="main" data-content-field="main-content" data-controller="FadeInContent">
+
+        <div class="loading-spinner"></div>
+  <div class="blog-list blog-wrapper" id="blogList" data-controller="BlogLayout"><article class="entry entry--list h-entry grid-hidden hentry author-john-sundell post-type-text article-index-1" id="article-5b9eaf7d21c67c4506168cc3" label="Blog Post" data-item-id="5b9eaf7d21c67c4506168cc3" data-offset="1537127342598">
+    <div class="thumbnail-title-wrapper">
+      
+      <div class="entry-title-wrapper">
+        <div class="title-bg-wrapper">
+          <h2 class="entry-title entry-title--list" data-content-field="title">
+            
+            <a href="/posts/reusable-data-sources-in-swift" class="u-url" rel="bookmark">
+            
+              <time class="dt-published date-callout" datetime="2018-09-16" pubdate>
+                <div class="date-wrapper">
+                  <span class="month">Sep </span><span class="day">16</span>
+                </div>
+              </time>
+              <time class="dt-published date-highlight" itemprop="datePublished" datetime="2018-09-16" pubdate>Sep 16 </time>Reusable data sources in Swift
+            </a>
+          </h2>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="entry-text">
+      
+      
+
+      <div class="entry-content">
+        <div class="blog-meta-item blog-meta-author"><a href="/?author=590b40b317bffc01e6729b6b" class="blog-author-name">John Sundell</a> </div>
+
+        
+
+        
+          <div class="entry-excerpt p-summary"><p style="white-space: pre-wrap;">Lists and collections of items are arguably two of the most common types of UIs found in apps - rendered through a&nbsp;UITableView&nbsp;or a&nbsp;UICollectionView. This week, let's take a look at how we can implement data sources for table- and collection views in a more reusable manner, and how doing so can let us make our list-based UI code more composable and easier to work with.</p></div>
+        
+      </div>
+    </div>
+  </article><article class="entry entry--list h-entry grid-hidden hentry author-john-sundell post-type-text article-index-2" id="article-5b958a18c2241b077918e9f7" label="Blog Post" data-item-id="5b958a18c2241b077918e9f7" data-offset="1536527165647">
+    <div class="thumbnail-title-wrapper">
+      
+      <div class="entry-title-wrapper">
+        <div class="title-bg-wrapper">
+          <h2 class="entry-title entry-title--list" data-content-field="title">
+            
+            <a href="/posts/lightweight-presenters-in-swift" class="u-url" rel="bookmark">
+            
+              <time class="dt-published date-callout" datetime="2018-09-09" pubdate>
+                <div class="date-wrapper">
+                  <span class="month">Sep </span><span class="day"> 9</span>
+                </div>
+              </time>
+              <time class="dt-published date-highlight" itemprop="datePublished" datetime="2018-09-09" pubdate>Sep  9 </time>Lightweight presenters in Swift
+            </a>
+          </h2>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="entry-text">
+      
+      
+
+      <div class="entry-content">
+        <div class="blog-meta-item blog-meta-author"><a href="/?author=590b40b317bffc01e6729b6b" class="blog-author-name">John Sundell</a> </div>
+
+        
+
+        
+          <div class="entry-excerpt p-summary"><p style="white-space: pre-wrap;">Separation of concerns is one of the most universally recognized programming principles - but in practice, it can be easier said than done, especially when it comes to UI development.</p><p style="white-space: pre-wrap;">This week, let’s take a look at how we can use the presenter pattern to move some code normally contained within view controllers  - specifically related to the presentation of additional UIs - into separate, dedicated types, to improve our separation of concerns.</p></div>
+        
+      </div>
+    </div>
+  </article><article class="entry entry--list h-entry grid-hidden hentry author-john-sundell post-type-text article-index-3" id="article-5b8c51604ae23722eb73917e" label="Blog Post" data-item-id="5b8c51604ae23722eb73917e" data-offset="1535923045953">
+    <div class="thumbnail-title-wrapper">
+      
+      <div class="entry-title-wrapper">
+        <div class="title-bg-wrapper">
+          <h2 class="entry-title entry-title--list" data-content-field="title">
+            
+            <a href="/posts/early-returning-functions-in-swift" class="u-url" rel="bookmark">
+            
+              <time class="dt-published date-callout" datetime="2018-09-02" pubdate>
+                <div class="date-wrapper">
+                  <span class="month">Sep </span><span class="day"> 2</span>
+                </div>
+              </time>
+              <time class="dt-published date-highlight" itemprop="datePublished" datetime="2018-09-02" pubdate>Sep  2 </time>Early returning functions in Swift
+            </a>
+          </h2>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="entry-text">
+      
+      
+
+      <div class="entry-content">
+        <div class="blog-meta-item blog-meta-author"><a href="/?author=590b40b317bffc01e6729b6b" class="blog-author-name">John Sundell</a> </div>
+
+        
+
+        
+          <div class="entry-excerpt p-summary"><p style="white-space: pre-wrap;">This week, let's take a look at how we can be inspired by the functional programming world to improve the structure and robustness of our Swift code - this time focusing on using functions that return objects and values as early as possible.</p></div>
+        
+      </div>
+    </div>
+  </article><article class="entry entry--list h-entry grid-hidden hentry author-john-sundell post-type-text article-index-4" id="article-5b82be06898583e9f6e06af5" label="Blog Post" data-item-id="5b82be06898583e9f6e06af5" data-offset="1535295563349">
+    <div class="thumbnail-title-wrapper">
+      
+      <div class="entry-title-wrapper">
+        <div class="title-bg-wrapper">
+          <h2 class="entry-title entry-title--list" data-content-field="title">
+            
+            <a href="/posts/enum-iterations-in-swift-42" class="u-url" rel="bookmark">
+            
+              <time class="dt-published date-callout" datetime="2018-08-26" pubdate>
+                <div class="date-wrapper">
+                  <span class="month">Aug </span><span class="day">26</span>
+                </div>
+              </time>
+              <time class="dt-published date-highlight" itemprop="datePublished" datetime="2018-08-26" pubdate>Aug 26 </time>Enum iterations in Swift 4.2
+            </a>
+          </h2>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="entry-text">
+      
+      
+
+      <div class="entry-content">
+        <div class="blog-meta-item blog-meta-author"><a href="/?author=590b40b317bffc01e6729b6b" class="blog-author-name">John Sundell</a> </div>
+
+        
+
+        
+          <div class="entry-excerpt p-summary"><p style="white-space: pre-wrap;">With each new release, Swift keeps getting better and better at creating compiler-generated implementations of common boilerplate. One such new feature in Swift 4.2 is the new&nbsp;CaseIterable&nbsp;protocol - that enables us to tell the compiler to automatically synthesize an&nbsp;allCases&nbsp;collection for any&nbsp;RawRepresentable enum. This week, let's take a look at some examples of scenarios in which this new feature can come very much in handy.</p></div>
+        
+      </div>
+    </div>
+  </article><article class="entry entry--list h-entry grid-hidden hentry author-john-sundell post-type-text article-index-5" id="article-5b79a88a032be447994aedd2" label="Blog Post" data-item-id="5b79a88a032be447994aedd2" data-offset="1534699816227">
+    <div class="thumbnail-title-wrapper">
+      
+      <div class="entry-title-wrapper">
+        <div class="title-bg-wrapper">
+          <h2 class="entry-title entry-title--list" data-content-field="title">
+            
+            <a href="/posts/model-controllers-in-swift" class="u-url" rel="bookmark">
+            
+              <time class="dt-published date-callout" datetime="2018-08-19" pubdate>
+                <div class="date-wrapper">
+                  <span class="month">Aug </span><span class="day">19</span>
+                </div>
+              </time>
+              <time class="dt-published date-highlight" itemprop="datePublished" datetime="2018-08-19" pubdate>Aug 19 </time>Model controllers in Swift
+            </a>
+          </h2>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="entry-text">
+      
+      
+
+      <div class="entry-content">
+        <div class="blog-meta-item blog-meta-author"><a href="/?author=590b40b317bffc01e6729b6b" class="blog-author-name">John Sundell</a> </div>
+
+        
+
+        
+          <div class="entry-excerpt p-summary"><p style="white-space: pre-wrap;">Proper encapsulation of logic is one of the most important things when it comes to building well-architected apps and systems. By limiting access to a given value or object to those that&nbsp;really&nbsp;need it, we can create more well-defined relationships and reduce the amount of code paths that we need to test. This week - let's take a look at how we can improve encapsulation in our model layer, using&nbsp;model controllers.</p></div>
+        
+      </div>
+    </div>
+  </article><article class="entry entry--list h-entry grid-hidden hentry author-john-sundell post-type-text article-index-6" id="article-5b707eda4fa51a50b7cb1bff" label="Blog Post" data-item-id="5b707eda4fa51a50b7cb1bff" data-offset="1534099305189">
+    <div class="thumbnail-title-wrapper">
+      
+      <div class="entry-title-wrapper">
+        <div class="title-bg-wrapper">
+          <h2 class="entry-title entry-title--list" data-content-field="title">
+            
+            <a href="/posts/trimming-long-argument-lists-in-swift" class="u-url" rel="bookmark">
+            
+              <time class="dt-published date-callout" datetime="2018-08-12" pubdate>
+                <div class="date-wrapper">
+                  <span class="month">Aug </span><span class="day">12</span>
+                </div>
+              </time>
+              <time class="dt-published date-highlight" itemprop="datePublished" datetime="2018-08-12" pubdate>Aug 12 </time>Trimming long argument lists in Swift
+            </a>
+          </h2>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="entry-text">
+      
+      
+
+      <div class="entry-content">
+        <div class="blog-meta-item blog-meta-author"><a href="/?author=590b40b317bffc01e6729b6b" class="blog-author-name">John Sundell</a> </div>
+
+        
+
+        
+          <div class="entry-excerpt p-summary"><p style="white-space: pre-wrap;">Adding new features to an app or framework often involves adding new arguments to existing functions. While most such changes may seem trivial at first, if we're not careful, we could - over time - end up with functions that are a bit unclear and cumbersome to use. This week, let's take a look at how to deal with such functions, and how they often can be simplified by reducing the number of arguments they accept.</p></div>
+        
+      </div>
+    </div>
+  </article><article class="entry entry--list h-entry grid-hidden hentry author-john-sundell post-type-text article-index-7" id="article-5b676863575d1f9e8ac546c9" label="Blog Post" data-item-id="5b676863575d1f9e8ac546c9" data-offset="1533503898740">
+    <div class="thumbnail-title-wrapper">
+      
+      <div class="entry-title-wrapper">
+        <div class="title-bg-wrapper">
+          <h2 class="entry-title entry-title--list" data-content-field="title">
+            
+            <a href="/posts/type-inference-powered-serialization-in-swift" class="u-url" rel="bookmark">
+            
+              <time class="dt-published date-callout" datetime="2018-08-05" pubdate>
+                <div class="date-wrapper">
+                  <span class="month">Aug </span><span class="day"> 5</span>
+                </div>
+              </time>
+              <time class="dt-published date-highlight" itemprop="datePublished" datetime="2018-08-05" pubdate>Aug  5 </time>Type inference-powered serialization in Swift
+            </a>
+          </h2>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="entry-text">
+      
+      
+
+      <div class="entry-content">
+        <div class="blog-meta-item blog-meta-author"><a href="/?author=590b40b317bffc01e6729b6b" class="blog-author-name">John Sundell</a> </div>
+
+        
+
+        
+          <div class="entry-excerpt p-summary"><p style="white-space: pre-wrap;">Type inference is a key feature of the Swift type system and plays a big part in the syntax of the language - making it less verbose by eliminating the need for manual type annotations where the compiler itself can&nbsp;infer&nbsp;the types of various values.</p><p style="white-space: pre-wrap;">This week, let's take a look at how we can make Swift's&nbsp;Codable&nbsp;API a bit nicer and less verbose to use, by leveraging the power of type inference.</p></div>
+        
+      </div>
+    </div>
+  </article><article class="entry entry--list h-entry grid-hidden hentry author-john-sundell post-type-text article-index-8" id="article-5b5db1391ae6cf84853a67fc" label="Blog Post" data-item-id="5b5db1391ae6cf84853a67fc" data-offset="1532867009648">
+    <div class="thumbnail-title-wrapper">
+      
+      <div class="entry-title-wrapper">
+        <div class="title-bg-wrapper">
+          <h2 class="entry-title entry-title--list" data-content-field="title">
+            
+            <a href="/posts/structuring-swift-code" class="u-url" rel="bookmark">
+            
+              <time class="dt-published date-callout" datetime="2018-07-29" pubdate>
+                <div class="date-wrapper">
+                  <span class="month">Jul </span><span class="day">29</span>
+                </div>
+              </time>
+              <time class="dt-published date-highlight" itemprop="datePublished" datetime="2018-07-29" pubdate>Jul 29 </time>Structuring Swift code
+            </a>
+          </h2>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="entry-text">
+      
+      
+
+      <div class="entry-content">
+        <div class="blog-meta-item blog-meta-author"><a href="/?author=590b40b317bffc01e6729b6b" class="blog-author-name">John Sundell</a> </div>
+
+        
+
+        
+          <div class="entry-excerpt p-summary"><p style="white-space: pre-wrap;">One thing that almost all apps and frameworks have in common is that they tend to grow in both size and complexity as time passes. As a project grows it becomes more and more important to maintain a solid and consistent structure, but at the same time it also becomes increasingly difficult to do so.</p><p style="white-space: pre-wrap;">This week, let's take a look at some tips and tricks as to how we can improve the structure of our Swift projects in a few key ways.</p></div>
+        
+      </div>
+    </div>
+  </article><article class="entry entry--list h-entry grid-hidden hentry author-john-sundell post-type-text article-index-9" id="article-5b54d38970a6ad6dfdfe755c" label="Blog Post" data-item-id="5b54d38970a6ad6dfdfe755c" data-offset="1532285907878">
+    <div class="thumbnail-title-wrapper">
+      
+      <div class="entry-title-wrapper">
+        <div class="title-bg-wrapper">
+          <h2 class="entry-title entry-title--list" data-content-field="title">
+            
+            <a href="/posts/writing-backward-compatible-swift-code" class="u-url" rel="bookmark">
+            
+              <time class="dt-published date-callout" datetime="2018-07-22" pubdate>
+                <div class="date-wrapper">
+                  <span class="month">Jul </span><span class="day">22</span>
+                </div>
+              </time>
+              <time class="dt-published date-highlight" itemprop="datePublished" datetime="2018-07-22" pubdate>Jul 22 </time>Writing backward compatible Swift code
+            </a>
+          </h2>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="entry-text">
+      
+      
+
+      <div class="entry-content">
+        <div class="blog-meta-item blog-meta-author"><a href="/?author=590b40b317bffc01e6729b6b" class="blog-author-name">John Sundell</a> </div>
+
+        
+
+        
+          <div class="entry-excerpt p-summary"><p style="white-space: pre-wrap;">Adding new features to existing code can be really challenging - especially if that code is heavily used throughout one or many projects. Backward compatibility can in many ways help us make such changes in a much smoother fashion, so this week, let's take a look at a few different techniques that can help us make changes to our code base fully backward compatible.</p></div>
+        
+      </div>
+    </div>
+  </article><article class="entry entry--list h-entry grid-hidden hentry author-john-sundell post-type-text article-index-10" id="article-5b4b85c18a922da49b9d19de" label="Blog Post" data-item-id="5b4b85c18a922da49b9d19de" data-offset="1531676190720">
+    <div class="thumbnail-title-wrapper">
+      
+      <div class="entry-title-wrapper">
+        <div class="title-bg-wrapper">
+          <h2 class="entry-title entry-title--list" data-content-field="title">
+            
+            <a href="/posts/refactoring-swift-code-for-testability" class="u-url" rel="bookmark">
+            
+              <time class="dt-published date-callout" datetime="2018-07-15" pubdate>
+                <div class="date-wrapper">
+                  <span class="month">Jul </span><span class="day">15</span>
+                </div>
+              </time>
+              <time class="dt-published date-highlight" itemprop="datePublished" datetime="2018-07-15" pubdate>Jul 15 </time>Refactoring Swift code for testability
+            </a>
+          </h2>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="entry-text">
+      
+      
+
+      <div class="entry-content">
+        <div class="blog-meta-item blog-meta-author"><a href="/?author=590b40b317bffc01e6729b6b" class="blog-author-name">John Sundell</a> </div>
+
+        
+
+        
+          <div class="entry-excerpt p-summary"><p style="white-space: pre-wrap;">Unit testing can be a great tool in order to improve the quality of an app, and to enable the team working on it to iterate and release faster and more often. However, being able to use unit testing in a productive way also requires the various parts of an app to be written with&nbsp;testability&nbsp;in mind, which isn't always the case.</p><p style="white-space: pre-wrap;">This week, let's take a look at a few different refactoring techniques that can help us make&nbsp;non-testable&nbsp;code much easier to test.</p></div>
+        
+      </div>
+    </div>
+  </article><article class="entry entry--list h-entry grid-hidden hentry author-john-sundell post-type-text article-index-11" id="article-5b427a50575d1f7f899a8e9c" label="Blog Post" data-item-id="5b427a50575d1f7f899a8e9c" data-offset="1531083404848">
+    <div class="thumbnail-title-wrapper">
+      
+      <div class="entry-title-wrapper">
+        <div class="title-bg-wrapper">
+          <h2 class="entry-title entry-title--list" data-content-field="title">
+            
+            <a href="/posts/subclass-free-view-controllers-in-swift" class="u-url" rel="bookmark">
+            
+              <time class="dt-published date-callout" datetime="2018-07-08" pubdate>
+                <div class="date-wrapper">
+                  <span class="month">Jul </span><span class="day"> 8</span>
+                </div>
+              </time>
+              <time class="dt-published date-highlight" itemprop="datePublished" datetime="2018-07-08" pubdate>Jul  8 </time>Subclass-free view controllers in Swift
+            </a>
+          </h2>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="entry-text">
+      
+      
+
+      <div class="entry-content">
+        <div class="blog-meta-item blog-meta-author"><a href="/?author=590b40b317bffc01e6729b6b" class="blog-author-name">John Sundell</a> </div>
+
+        
+
+        
+          <div class="entry-excerpt p-summary"><p style="white-space: pre-wrap;">While subclassing is not&nbsp;universally bad, avoiding it can in many situations leave us with simpler code that is easier to change and reuse. This week, let's take a look at a few different techniques that can help us write&nbsp;subclass-free view controllers, and how it can help us avoid the&nbsp;Massive View Controller&nbsp;problem.</p></div>
+        
+      </div>
+    </div>
+  </article><article class="entry entry--list h-entry grid-hidden hentry author-john-sundell post-type-text article-index-12" id="article-5b39219faa4a9988ca13cf8e" label="Blog Post" data-item-id="5b39219faa4a9988ca13cf8e" data-offset="1530470848832">
+    <div class="thumbnail-title-wrapper">
+      
+      <div class="entry-title-wrapper">
+        <div class="title-bg-wrapper">
+          <h2 class="entry-title entry-title--list" data-content-field="title">
+            
+            <a href="/posts/custom-container-view-controllers-in-swift" class="u-url" rel="bookmark">
+            
+              <time class="dt-published date-callout" datetime="2018-07-01" pubdate>
+                <div class="date-wrapper">
+                  <span class="month">Jul </span><span class="day"> 1</span>
+                </div>
+              </time>
+              <time class="dt-published date-highlight" itemprop="datePublished" datetime="2018-07-01" pubdate>Jul  1 </time>Custom container view controllers in Swift
+            </a>
+          </h2>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="entry-text">
+      
+      
+
+      <div class="entry-content">
+        <div class="blog-meta-item blog-meta-author"><a href="/?author=590b40b317bffc01e6729b6b" class="blog-author-name">John Sundell</a> </div>
+
+        
+
+        
+          <div class="entry-excerpt p-summary"><p style="white-space: pre-wrap;">View controller containment has been an essential part of UIKit ever since the early days of the iPhone. This week, let's take a look at how we can build our own container view controllers, and how doing so can help us make parts of our UI code more modular and easier to manage.</p></div>
+        
+      </div>
+    </div>
+  </article><article class="entry entry--list h-entry grid-hidden hentry author-john-sundell post-type-text article-index-13" id="article-5b2feed58a922d7f9ce48c7e" label="Blog Post" data-item-id="5b2feed58a922d7f9ce48c7e" data-offset="1529868081509">
+    <div class="thumbnail-title-wrapper">
+      
+      <div class="entry-title-wrapper">
+        <div class="title-bg-wrapper">
+          <h2 class="entry-title entry-title--list" data-content-field="title">
+            
+            <a href="/posts/handling-mutable-models-in-swift" class="u-url" rel="bookmark">
+            
+              <time class="dt-published date-callout" datetime="2018-06-24" pubdate>
+                <div class="date-wrapper">
+                  <span class="month">Jun </span><span class="day">24</span>
+                </div>
+              </time>
+              <time class="dt-published date-highlight" itemprop="datePublished" datetime="2018-06-24" pubdate>Jun 24 </time>Handling mutable models in Swift
+            </a>
+          </h2>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="entry-text">
+      
+      
+
+      <div class="entry-content">
+        <div class="blog-meta-item blog-meta-author"><a href="/?author=590b40b317bffc01e6729b6b" class="blog-author-name">John Sundell</a> </div>
+
+        
+
+        
+          <div class="entry-excerpt p-summary"><p style="white-space: pre-wrap;">One of the most important aspects of any app's architecture is how data and models are dealt with. Building a robust model structure and establishing well-defined data flows can really help us avoid a large set of bugs and problems, but at the same time we also need to make our model code easy to use and maintain.</p><p style="white-space: pre-wrap;">This week, let's take a look at a few different techniques that can help us make code dealing with mutable models a bit more predictable.</p></div>
+        
+      </div>
+    </div>
+  </article><article class="entry entry--list h-entry grid-hidden hentry author-john-sundell post-type-text article-index-14" id="article-5b268f0f6d2a73b36bcf02cd" label="Blog Post" data-item-id="5b268f0f6d2a73b36bcf02cd" data-offset="1529253796525">
+    <div class="thumbnail-title-wrapper">
+      
+      <div class="entry-title-wrapper">
+        <div class="title-bg-wrapper">
+          <h2 class="entry-title entry-title--list" data-content-field="title">
+            
+            <a href="/posts/the-power-of-result-types-in-swift" class="u-url" rel="bookmark">
+            
+              <time class="dt-published date-callout" datetime="2018-06-17" pubdate>
+                <div class="date-wrapper">
+                  <span class="month">Jun </span><span class="day">17</span>
+                </div>
+              </time>
+              <time class="dt-published date-highlight" itemprop="datePublished" datetime="2018-06-17" pubdate>Jun 17 </time>The power of Result types in Swift
+            </a>
+          </h2>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="entry-text">
+      
+      
+
+      <div class="entry-content">
+        <div class="blog-meta-item blog-meta-author"><a href="/?author=590b40b317bffc01e6729b6b" class="blog-author-name">John Sundell</a> </div>
+
+        
+
+        
+          <div class="entry-excerpt p-summary"><p style="white-space: pre-wrap;">This week, let's explore various versions of the commonly used Result type, and some of the cool things it lets us do when combined with some of Swift's language features.</p></div>
+        
+      </div>
+    </div>
+  </article><article class="entry entry--list h-entry grid-hidden hentry author-john-sundell post-type-text article-index-15" id="article-5b1d20642b6a282a6173e66b" label="Blog Post" data-item-id="5b1d20642b6a282a6173e66b" data-offset="1528635687689">
+    <div class="thumbnail-title-wrapper">
+      
+      <div class="entry-title-wrapper">
+        <div class="title-bg-wrapper">
+          <h2 class="entry-title entry-title--list" data-content-field="title">
+            
+            <a href="/posts/making-swift-tests-easier-to-debug" class="u-url" rel="bookmark">
+            
+              <time class="dt-published date-callout" datetime="2018-06-10" pubdate>
+                <div class="date-wrapper">
+                  <span class="month">Jun </span><span class="day">10</span>
+                </div>
+              </time>
+              <time class="dt-published date-highlight" itemprop="datePublished" datetime="2018-06-10" pubdate>Jun 10 </time>Making Swift tests easier to debug
+            </a>
+          </h2>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="entry-text">
+      
+      
+
+      <div class="entry-content">
+        <div class="blog-meta-item blog-meta-author"><a href="/?author=590b40b317bffc01e6729b6b" class="blog-author-name">John Sundell</a> </div>
+
+        
+
+        
+          <div class="entry-excerpt p-summary"><p style="white-space: pre-wrap;">When writing tests for any application, it's always important to consider what the debugging experience will be like when they eventually start failing. After all, the purpose of all kinds of automated tests is to eventually fail - since it'll let us catch bugs and errors before they reach our users.</p><p style="white-space: pre-wrap;">This week, let's take a look at a few different scenarios, and how we - with just a few subtle tweaks - can make our tests a lot easier to debug.</p></div>
+        
+      </div>
+    </div>
+  </article><article class="entry entry--list h-entry grid-hidden hentry author-john-sundell post-type-text article-index-16" id="article-5b143487aa4a99a40527db3c" label="Blog Post" data-item-id="5b143487aa4a99a40527db3c" data-offset="1528051186406">
+    <div class="thumbnail-title-wrapper">
+      
+      <div class="entry-title-wrapper">
+        <div class="title-bg-wrapper">
+          <h2 class="entry-title entry-title--list" data-content-field="title">
+            
+            <a href="/posts/static-factory-methods-in-swift" class="u-url" rel="bookmark">
+            
+              <time class="dt-published date-callout" datetime="2018-06-03" pubdate>
+                <div class="date-wrapper">
+                  <span class="month">Jun </span><span class="day"> 3</span>
+                </div>
+              </time>
+              <time class="dt-published date-highlight" itemprop="datePublished" datetime="2018-06-03" pubdate>Jun  3 </time>Static factory methods in Swift
+            </a>
+          </h2>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="entry-text">
+      
+      
+
+      <div class="entry-content">
+        <div class="blog-meta-item blog-meta-author"><a href="/?author=590b40b317bffc01e6729b6b" class="blog-author-name">John Sundell</a> </div>
+
+        
+
+        
+          <div class="entry-excerpt p-summary"><p style="white-space: pre-wrap;">Most objects require some form of setup before they're ready to be used in an app. While it’s very common to create subclasses for that purpose, this week, let's take a look at an alternative approach to writing setup code that doesn't require any form of subclassing - by using&nbsp;static factory methods.</p></div>
+        
+      </div>
+    </div>
+  </article><article class="entry entry--list h-entry grid-hidden hentry author-john-sundell post-type-text article-index-17" id="article-5b0aaf161ae6cf750575a85e" label="Blog Post" data-item-id="5b0aaf161ae6cf750575a85e" data-offset="1527426887295">
+    <div class="thumbnail-title-wrapper">
+      
+      <div class="entry-title-wrapper">
+        <div class="title-bg-wrapper">
+          <h2 class="entry-title entry-title--list" data-content-field="title">
+            
+            <a href="/posts/writing-self-documenting-swift-code" class="u-url" rel="bookmark">
+            
+              <time class="dt-published date-callout" datetime="2018-05-27" pubdate>
+                <div class="date-wrapper">
+                  <span class="month">May </span><span class="day">27</span>
+                </div>
+              </time>
+              <time class="dt-published date-highlight" itemprop="datePublished" datetime="2018-05-27" pubdate>May 27 </time>Writing self-documenting Swift code
+            </a>
+          </h2>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="entry-text">
+      
+      
+
+      <div class="entry-content">
+        <div class="blog-meta-item blog-meta-author"><a href="/?author=590b40b317bffc01e6729b6b" class="blog-author-name">John Sundell</a> </div>
+
+        
+
+        
+          <div class="entry-excerpt p-summary"><p style="white-space: pre-wrap;">When and how to write documentation and code comments tends to be something that causes a lot of debate among developers. This week, let's take a look at a few simple tips and tricks that can let us write code that is more&nbsp;self-documenting&nbsp;- code that makes the underlying intent and details more clear, simply by the way it's structured and how it's written.</p></div>
+        
+      </div>
+    </div>
+  </article><article class="entry entry--list h-entry grid-hidden hentry author-john-sundell post-type-text article-index-18" id="article-5b0169ef1ae6cf341dc8ec47" label="Blog Post" data-item-id="5b0169ef1ae6cf341dc8ec47" data-offset="1526819416580">
+    <div class="thumbnail-title-wrapper">
+      
+      <div class="entry-title-wrapper">
+        <div class="title-bg-wrapper">
+          <h2 class="entry-title entry-title--list" data-content-field="title">
+            
+            <a href="/posts/launch-arguments-in-swift" class="u-url" rel="bookmark">
+            
+              <time class="dt-published date-callout" datetime="2018-05-20" pubdate>
+                <div class="date-wrapper">
+                  <span class="month">May </span><span class="day">20</span>
+                </div>
+              </time>
+              <time class="dt-published date-highlight" itemprop="datePublished" datetime="2018-05-20" pubdate>May 20 </time>Launch arguments in Swift
+            </a>
+          </h2>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="entry-text">
+      
+      
+
+      <div class="entry-content">
+        <div class="blog-meta-item blog-meta-author"><a href="/?author=590b40b317bffc01e6729b6b" class="blog-author-name">John Sundell</a> </div>
+
+        
+
+        
+          <div class="entry-excerpt p-summary"><p style="white-space: pre-wrap;">While launch arguments are probably most commonly used as input to command line tools - this week, let's take a look at how we can also use the power of launch arguments when working on, debugging, and testing an iOS app.</p></div>
+        
+      </div>
+    </div>
+  </article><article class="entry entry--list h-entry grid-hidden hentry author-john-sundell post-type-text article-index-19" id="article-5af8199e562fa7deeeccefcb" label="Blog Post" data-item-id="5af8199e562fa7deeeccefcb" data-offset="1526209045623">
+    <div class="thumbnail-title-wrapper">
+      
+      <div class="entry-title-wrapper">
+        <div class="title-bg-wrapper">
+          <h2 class="entry-title entry-title--list" data-content-field="title">
+            
+            <a href="/posts/type-safe-identifiers-in-swift" class="u-url" rel="bookmark">
+            
+              <time class="dt-published date-callout" datetime="2018-05-13" pubdate>
+                <div class="date-wrapper">
+                  <span class="month">May </span><span class="day">13</span>
+                </div>
+              </time>
+              <time class="dt-published date-highlight" itemprop="datePublished" datetime="2018-05-13" pubdate>May 13 </time>Type-safe identifiers in Swift
+            </a>
+          </h2>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="entry-text">
+      
+      
+
+      <div class="entry-content">
+        <div class="blog-meta-item blog-meta-author"><a href="/?author=590b40b317bffc01e6729b6b" class="blog-author-name">John Sundell</a> </div>
+
+        
+
+        
+          <div class="entry-excerpt p-summary"><p style="white-space: pre-wrap;">In most code bases, we need a way to uniquely identify certain values and objects. It can be when keeping track of models in a cache or database, or when performing a network request to fetch more data for a certain entity.</p><p style="white-space: pre-wrap;">This week, let’s take a look at how we can create type-safe identifiers that enable us to write more robust model handling code.</p></div>
+        
+      </div>
+    </div>
+  </article><article class="entry entry--list h-entry grid-hidden hentry author-john-sundell post-type-text article-index-20" id="article-5aeef2e96d2a732e28d9acf8" label="Blog Post" data-item-id="5aeef2e96d2a732e28d9acf8" data-offset="1525609311288">
+    <div class="thumbnail-title-wrapper">
+      
+      <div class="entry-title-wrapper">
+        <div class="title-bg-wrapper">
+          <h2 class="entry-title entry-title--list" data-content-field="title">
+            
+            <a href="/posts/logic-controllers-in-swift" class="u-url" rel="bookmark">
+            
+              <time class="dt-published date-callout" datetime="2018-05-06" pubdate>
+                <div class="date-wrapper">
+                  <span class="month">May </span><span class="day"> 6</span>
+                </div>
+              </time>
+              <time class="dt-published date-highlight" itemprop="datePublished" datetime="2018-05-06" pubdate>May  6 </time>Logic controllers in Swift
+            </a>
+          </h2>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="entry-text">
+      
+      
+
+      <div class="entry-content">
+        <div class="blog-meta-item blog-meta-author"><a href="/?author=590b40b317bffc01e6729b6b" class="blog-author-name">John Sundell</a> </div>
+
+        
+
+        
+          <div class="entry-excerpt p-summary"><p style="white-space: pre-wrap;">One big challenge that most Swift developers face from time to time, is how to deal with&nbsp;Massive View Controllers. Whether we're talking about subclasses of&nbsp;UIViewController&nbsp;on iOS &amp; tvOS or&nbsp;NSViewController&nbsp;on the Mac, this type of classes tend to grow very large - both in terms of scope and number of lines of code.</p><p style="white-space: pre-wrap;">This week, let’s take a look at how Massive View Controllers can be broken up using Logic Controllers.</p></div>
+        
+      </div>
+    </div>
+  </article>
+
+</div>
+
+<div class="load-more-wrapper"><a class="load-more" href="/?offset=1525609311288">Load More</a></div>
+
+<div class="breaker"></div>
+
+      </main>
+
+      <footer id="footer" class="site-footer responsive-margin--top responsive-padding--left responsive-padding--right responsive-padding--top responsive-padding--bottom" role="contentinfo">
+        <div class="sqs-layout sqs-grid-12 columns-12" data-layout-label="Footer Content" data-type="block-field" data-updated-on="1516729876166" id="footerBlocks"><div class="row sqs-row"><div class="col sqs-col-12 span-12"><div class="row sqs-row"><div class="col sqs-col-3 span-3"><div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-block-type="21" id="block-yui_3_17_2_16_1455123498129_5268"><div class="sqs-block-content">&nbsp;</div></div></div><div class="col sqs-col-9 span-9"><div class="row sqs-row"><div class="col sqs-col-6 span-6"><div class="sqs-block image-block sqs-block-image" data-block-type="5" id="block-bf27c28fa5c3c31235a2"><div class="sqs-block-content">
+
+  
+
+  	
+      <div class="image-block-outer-wrapper layout-caption-hidden design-layout-inline   ">
+      
+        <div class="intrinsic" style="max-width:150.0px;">
+          
+            <div style="padding-bottom:100.0%;" class="image-block-wrapper   has-aspect-ratio" data-description="" >
+              <noscript><img src="https://static1.squarespace.com/static/590b40b75016e10ca7fbff78/t/590b49071b631b14ff85e44b/1493911820125/"  /></noscript><img class="thumb-image" data-src="https://static1.squarespace.com/static/590b40b75016e10ca7fbff78/t/590b49071b631b14ff85e44b/1493911820125/" data-image="https://static1.squarespace.com/static/590b40b75016e10ca7fbff78/t/590b49071b631b14ff85e44b/1493911820125/" data-image-dimensions="150x150" data-image-focal-point="0.5,0.5" data-load="false" data-image-id="590b49071b631b14ff85e44b" data-type="image" />
+            </div>
+          
+
+          
+
+        </div>
+      
+      </div>
+    
+
+  
+
+
+</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_16_1455123498129_4719"><div class="sqs-block-content"><h2>Hi, I'm John! I build apps, games &amp; Swift developer tools. On this blog I post weekly posts about Swift development techniques, frameworks and tips &amp; tricks. You can also find me on <a target="_blank" href="https://twitter.com/johnsundell"><strong>Twitter</strong></a> and <a target="_blank" href="https://github.com/johnsundell"><strong>GitHub</strong></a>.</h2></div></div><div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_4_1516725321843_6394"><div class="sqs-block-content"><div class="theme-select">
+    Theme:
+    <a href="#" id="theme-select-light" onclick="return selectTheme('light');">Light</a>  |  
+    <a href="#" id="theme-select-dark" onclick="return selectTheme('dark');">Dark</a>  |  
+    <a href="#" id="theme-select-black" onclick="return selectTheme('black');">Black</a>
+</div></div></div></div><div class="col sqs-col-3 span-3"><div class="sqs-block spacer-block sqs-block-spacer sized vsize-1" data-block-type="21" id="block-yui_3_17_2_16_1455123498129_6139"><div class="sqs-block-content">&nbsp;</div></div></div></div></div></div><div class="sqs-block spacer-block sqs-block-spacer" data-aspect-ratio="1.3449023861171367" data-block-type="21" id="block-yui_3_17_2_16_1455123498129_7511"><div class="sqs-block-content">&nbsp;</div></div><div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_16_1455123498129_8435"><div class="sqs-block-content"><p class="text-align-center">Powered by <a target="_blank" href="http://www.squarespace.com?channel=word_of_mouth&amp;subchannel=customer&amp;source=footer&amp;campaign=4fd1028ee4b02be53c65dfb3">Squarespace</a></p></div></div></div></div></div>
+        <div id="footerNavWrapper" class="nav-wrapper footer-nav">
+          
+
+        </div>
+      </footer>
+
+    </div>
+
+    <div id="mobileBar" class="mobile-bar" data-controller="MobileOffset">
+      <a class="nav-toggle-label nav-toggle-label--mobile flex-item" id="navToggleMobile" data-controller="NavToggle">
+        <svg class="Icon Icon--hamburger nav-toggle-label-icon" viewBox="0 0 26 18">
+          <use class="use--odd" xlink:href="/assets/ui-icons.svg#hamburger-icon--odd"></use>
+          <use class="use--even" xlink:href="/assets/ui-icons.svg#hamburger-icon--even"></use>
+        </svg>
+      </a><!--
+      --><div class="social-ellipsis social-ellipsis--mobile flex-item" id="socialEllipsisMobile" data-controller="SocialToggle">
+        <svg class="ellipsis-icon" viewBox="0 0 25 6">
+          <use xlink:href="/assets/ui-icons.svg#ellipsis-icon"></use>
+        </svg>
+        <svg class="Icon Icon--close social-close-icon" viewBox="0 0 18 18">
+          <use xlink:href="/assets/ui-icons.svg#close-icon-line"></use>
+        </svg>
+      </div><!--
+      --><div class="search-cart--mobile flex-item">
+        <a href="/search" rel="search" class="header-search header-search--mobile" data-controller="SearchToggle">
+          <svg class="Icon Icon--search search-icon" viewBox="0 0 20 20">
+            <use xlink:href="/assets/ui-icons.svg#search-icon"></use>
+          </svg>
+          <svg class="Icon Icon--close search-close-icon" viewBox="0 0 18 18">
+            <use xlink:href="/assets/ui-icons.svg#close-icon-line"></use>
+          </svg>
+        </a>
+        
+        
+      </div><!--
+      -->
+    </div>
+
+    <script src="https://static1.squarespace.com/static/ta/54d39057e4b01a0da310c80f/4930/scripts/site-bundle.js" type="text/javascript"></script>
+    <script type="text/javascript" data-sqs-type="imageloader-bootstraper">(function() {if(window.ImageLoader) { window.ImageLoader.bootstrap({}, document); }})();</script><script>Squarespace.afterBodyLoad(Y);</script>
+
+  </body>
+</html>
+
