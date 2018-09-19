@@ -1,5 +1,5 @@
 .header {
-    background-color: #222 !important;
+    background-color: white;
     color: white;
 }
 
@@ -71,6 +71,6 @@ body {
 }
 
 .first-section {
-    background-color: #f3f3f3;
+    background-color: white;
     padding-top: 2px;
 }
